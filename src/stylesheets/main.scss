@@ -1,0 +1,19 @@
+@import '../vendors/bootstrap-sass/assets/stylesheets/bootstrap.scss';
+@import '_partials/_mixins.scss';
+@import '_partials/_variables.scss';
+@import '_partials/_fonts.scss';
+@import '_partials/_typography.scss';
+@import '_partials/_bootstrap-override.scss';
+
+@import '_partials/_header.scss';
+
+.test1 {
+  font-size: 50px;
+  font-family: BradobreiRegular;
+  font-style: italic;
+}
+
+.font {
+
+  font-weight: 700;
+}

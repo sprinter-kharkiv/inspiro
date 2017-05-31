@@ -1,0 +1,43 @@
+/* Fonts */
+
+$font-path: '../fonts/';
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  src: url("#{$font-path}LatoRegular/LatoRegular.eot?#iefix") format("embedded-opentype"),
+  url("#{$font-path}LatoRegular/LatoRegular.woff") format("woff"),
+  url("#{$font-path}LatoRegular/LatoRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: url("#{$font-path}LatoBold/LatoBold.eot?#iefix") format("embedded-opentype"),
+  url("#{$font-path}LatoBold/LatoBold.woff") format("woff"),
+  url("#{$font-path}LatoBold/LatoBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: url("#{$font-path}LatoLight/LatoLight.eot?#iefix") format("embedded-opentype"),
+  url("#{$font-path}LatoLight/LatoLight.woff") format("woff"),
+  url("#{$font-path}LatoLight/LatoLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BradobreiRegular";
+  src: url("#{$font-path}BradobreiRegular/BradobreiRegular.eot");
+  src: url("#{$font-path}BradobreiRegular/BradobreiRegular.eot?#iefix") format("embedded-opentype"),
+  url("#{$font-path}BradobreiRegular/BradobreiRegular.woff") format("woff"),
+  url("#{$font-path}BradobreiRegular/BradobreiRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+

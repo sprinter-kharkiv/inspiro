@@ -1,0 +1,80 @@
+/* VARIABLES */
+
+
+/*************************
+	Local color variables
+*************************/
+/* For color names was used site - http://chir.ag/projects/name-that-color */
+/* White group */
+$white: #ffffff;
+/* Black group */
+$mine-shaft: #232323; //Title color
+$cod-gray: #1E1E1E;
+$black: #000000;
+/* Gray group */
+$alabaseter-light: #FCFCFC;
+$alabaster: #FBFBFB; //Mutted
+$gallery: #EFEFEF; //Border color
+$concrete: #f2f2f2;
+$mercury-soft: #E5E5E5;
+$alto: #DADADA;
+$dusty-gray: #979797;
+$mercury: #E2E2E2; //Field border color and placeholder color
+$gray: #8F8F8F; //Footer nav color
+$dove-gray: #707070; //Main text color
+$dove-gray-soft: #6F6F6F;
+$boulder: #747474;
+$scorpion: #5A5A5A;
+/* Red group */
+$sundown: #FFAEB8;
+$seashell-peach: #FFF4ED;
+/* Green group */
+$main-green: #77af42;
+$cerulean: #0DBDD1; //Success color
+/*************************
+	Global color variables
+*************************/
+$success: $cerulean;
+$border: $gallery;
+$mutted-light: $alabaseter-light;
+$mutted: $alabaster;
+$dark: $mine-shaft;
+$rose: $seashell-peach;
+
+$body-color: $dove-gray;
+
+/*************************
+	Fonts variables
+*************************/
+$font-base: 'GothamRounded-Book';
+$font-book: 'GothamRounded-Book';
+$font-medium: 'GothamRounded-Medium';
+$font-secondary: 'PermanentMarker';
+
+
+$font-icons: 'fontello';
+.font-icon {
+  font-family: $font-icons;
+  font-style: normal;
+}
+
+/*************************
+	Body variables
+*************************/
+$body-font-family: $font-base;
+$body-font-size: 16px;
+$body-font-size-xs: 14px;
+$body-line-height: 1.5;
+$body-main-color: $body-color;
+
+
+/*************************
+	Links variables
+*************************/
+$link-color: $success;
+
+
+/*************************
+	Title variable
+*************************/
+$title-color: $mine-shaft;

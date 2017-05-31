@@ -1,0 +1,76 @@
+/* FORMS */
+
+$field-border: $mercury;
+$field-border-focus: $success;
+$field-ff: $font-medium;
+
+.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-shadow: none;
+  border-color: $field-border;
+  border-radius: 2px;
+  height: 48px;
+  font-family: $field-ff;
+  position: relative;
+  background: none;
+  &:focus {
+    box-shadow: none;
+    border-color: $field-border-focus;
+  }
+  &.form-control-md {
+    height: 44px;
+  }
+}
+
+select, select.form-control {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzIwcHgiIGhlaWdodD0iMTkxLjlweCIgdmlld0JveD0iOTYgMTYwIDMyMCAxOTEuOSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyA5NiAxNjAgMzIwIDE5MS45IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiMwREJERDEiIGQ9Ik05OC45LDE4NC43bDEuOCwyLjFsMTM2LDE1Ni41YzQuNiw1LjMsMTEuNSw4LjYsMTkuMiw4LjZzMTQuNi0zLjQsMTkuMi04LjZMNDExLDE4Ny4xbDIuMy0yLjYNCgljMS43LTIuNSwyLjctNS41LDIuNy04LjdjMC04LjctNy40LTE1LjgtMTYuNi0xNS44bDAsMEgxMTIuNmwwLDBjLTkuMiwwLTE2LjYsNy4xLTE2LjYsMTUuOEM5NiwxNzkuMSw5Ny4xLDE4Mi4yLDk4LjksMTg0Ljd6Ii8+DQo8L3N2Zz4NCg==');
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: right 10px center;
+}
+
+legend {
+  border: none;
+  font-size: 14px;
+  color: $scorpion;
+  font-weight: normal;
+  font-family: $font-medium;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 30px;
+  @include respond-to(xs) {
+    margin-bottom: 24px;
+  }
+  &.filled, &.focus {
+    .label-floated {
+      top: 0%;
+      transform: translateY(-50%);
+      font-size: 12px;
+    }
+  }
+}
+
+.label-floated {
+  font-family: $field-ff;
+  padding: 5px;
+  font-size: 14px;
+  position: absolute;
+  z-index: 5;
+  left: 10px;
+  background: $white;
+  top: 50%;
+  transform: translateY(-50%);
+  @include transition(250ms);
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.btn-submit-bottom {
+  @include respond-to(xs-min) {
+    margin-top: 25px;
+  }
+}

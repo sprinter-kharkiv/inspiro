@@ -1,0 +1,9 @@
+/* SECTION */
+
+.section {
+  position: relative;
+  padding: 90px 0px;
+  @include respond-to(sm) {
+    padding: 35px 0;
+  }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Заголовок</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <!-- Bootstrap v3.3.4 Grid Styles -->
+    //= template/bootstrap-grid-styles.html
+
+
+    <!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+    <style></style>
+
+    <!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+    //= template/_load-styles.html
+
+    <!-- Load CSS Start -->
+    <script>loadLocalStorageCSS("webfonts", "css/fonts.min.css?ver=1.0.0");</script>
+    <script>loadCSS("css/header.min.css?ver=1.0.0", false, "all");</script>
+    <script>loadCSS("css/main.min.css?ver=1.0.0", false, "all");</script>
+    <!-- Load CSS End -->
+
+    <!-- Load CSS Compiled without JS -->
+    <noscript>
+        <link rel="stylesheet" href="css/fonts.min.css">
+        <link rel="stylesheet" href="css/main.min.css">
+    </noscript>
+
+</head>
+
+<body>
+
+<!-- Здесь пишем код -->
+
+//= template/header.html
+
+<section class="banner">
+    <div class="container">
+        <nav class="header-nav" role="navigation">
+            <div class="header-nav__item" role="menuitem"><a href="#about">About us</a></div>
+            <div class="header-nav__item active" role="menuitem"><a href="#about">Economic</a></div>
+            <div class="header-nav__item" role="menuitem"><a href="#about">Regulatory/Goverment</a></div>
+            <div class="header-nav__item" role="menuitem"><a href="#about">Suppliers</a></div>
+            <div class="header-nav__item" role="menuitem"><a href="#about">Competitors</a></div>
+            <div class="header-nav__item" role="menuitem"><a href="#about">Customer</a></div>
+            <div class="header-nav__item" role="menuitem"><a href="#about">Funder/Industry</a></div>
+            <div class="header-nav__item" role="menuitem"><a href="#about">Contact Us</a></div>
+        </nav>
+        <div class="slogan-wrap">
+            <h2 class="slogan">want to get more customers</h2>
+            <h4 class="slogan-describe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur, at
+                beatae commodi, doloremque ducimus est eum ex hic odio quam quis sunt veniam. Aliquid itaque nihil
+                reprehenderit tempora vero!</h4>
+            <button>Get Started</button>
+        </div>
+    </div>
+
+</section>
+
+<div class="hidden"></div>
+
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+
+<!-- Load Scripts Start -->
+//= template/_load-scripts.html
+<!-- Load Scripts End -->
+
+</body>
+</html>

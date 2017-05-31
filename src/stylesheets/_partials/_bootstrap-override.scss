@@ -1,0 +1,52 @@
+/* BOOTSTRAP VARIABLES */
+
+.container--xs {
+  @include respond-to(xs-min) {
+    max-width: 620px;
+  }
+}
+
+.row {
+  @include respond-to(xs) {
+    >[class^="col-sm"] {
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
+    >[class^="col-md"] {
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
+    >[class^="col-lg"] {
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+.row--flex {
+  @include respond-to(xs-min) {
+    display: flex;
+    flex-wrap: wrap;
+    &:before, &:after {
+      content: none;
+    }
+  }
+  >[class^="col"] {
+    >[class^="col-sm"] {
+      float: none;
+    }
+  }
+}
+
+.row--bordered {
+  @include respond-to(xs-min) {
+    [class^="col"] {
+      &+[class^="col"] {
+        border-left: 1px solid $mercury;
+      }
+    }
+  }
+}

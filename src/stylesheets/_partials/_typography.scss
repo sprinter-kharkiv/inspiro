@@ -1,0 +1,155 @@
+
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $body-font-family;
+  color: $body-main-color;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+}
+
+
+
+.content-holder {
+  flex: 1;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: $font-medium;
+  color: $title-color;
+  line-height: 1.3;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+h1, .h1 {
+  font-size: 30px;
+  @include respond-to(xs) {
+    font-size: 26px;
+  }
+}
+
+h2, .h2 {
+  font-size: 23px;
+}
+
+h3, .h3 {
+  font-size: 21px;
+}
+
+h4, .h4 {
+  font-size: 19px;
+}
+
+h5, .h5 {
+  font-size: 17px;
+}
+
+h6, .h6 {
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover, &:focus {
+    color: darken($link-color, 10%);
+    text-decoration: none;
+  }
+}
+
+button, a {
+  @include transition(250ms);
+}
+
+p {
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  a {
+    color: inherit;
+  }
+}
+
+b, strong {
+  font-family: $font-medium;
+}
+
+/*Font classes*/
+.font-regular {
+  font-family: $font-base;
+}
+
+.font-medium {
+  font-family: $font-medium;
+}
+
+.font-secondary {
+  font-family: $font-secondary;
+}
+
+/*Color classes*/
+.text-success {
+  color: $success;
+}
+
+.text-mutted {
+  color: $mutted;
+}
+
+.text-dark {
+  color: $dark;
+}
+
+.text-white {
+  color: $white;
+}
+
+/*Background classes*/
+.bg-success {
+  background: $success;
+}
+
+.bg-mutted-light {
+  background: $mutted-light;
+}
+
+.bg-mutted {
+  background: $mutted;
+}
+
+/*Margin classes*/
+.title {
+  margin-bottom: 60px;
+  @include respond-to(sm) {
+    margin-bottom: 40px;
+  }
+  @include respond-to(xs) {
+    margin-bottom: 30px;
+  }
+}
+
+.title-md {
+  margin-bottom: 50px;
+  @include respond-to(sm) {
+    margin-bottom: 35px;
+  }
+  @include respond-to(xs) {
+    margin-bottom: 25px;
+  }
+}
+
+.title-sm {
+  margin-bottom: 30px;
+  @include respond-to(xs) {
+    margin-bottom: 25px;
+  }
+}
+
+/*Font-size classes*/
+.fs-xs {
+  font-size: 11px;
+}
