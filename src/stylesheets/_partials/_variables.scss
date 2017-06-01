@@ -30,6 +30,7 @@ $sundown: #FFAEB8;
 $seashell-peach: #FFF4ED;
 /* Green group */
 $main-green: #77af42;
+$main-blue: #316da1;
 $cerulean: #0DBDD1; //Success color
 /*************************
 	Global color variables
@@ -46,9 +47,9 @@ $body-color: $dove-gray;
 /*************************
 	Fonts variables
 *************************/
-$font-base: 'GothamRounded-Book';
-$font-book: 'GothamRounded-Book';
-$font-medium: 'GothamRounded-Medium';
+$font-base: 'Lato';
+$font-book: 'Lato';
+$font-medium: 'Lato';
 $font-secondary: 'PermanentMarker';
 
 
@@ -77,4 +78,4 @@ $link-color: $success;
 /*************************
 	Title variable
 *************************/
-$title-color: $mine-shaft;
+$title-color: $main-green;

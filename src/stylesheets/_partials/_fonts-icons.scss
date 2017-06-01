@@ -14,12 +14,11 @@ $font-path: '../fonts/';
   font-style: normal;
 }
  
- [class^="inbrace-icon-"]:before, [class*=" inbrace-icon-"]:before {
+ [class^="inspiro-icon-"]:before, [class*=" inspiro-icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: none;
- 
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -32,8 +31,9 @@ $font-path: '../fonts/';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
- 
-.inbrace-icon-plus:before { content: '\e800'; } /* '' */
-.inbrace-icon-minus:before { content: '\e801'; } /* '' */
-.inbrace-icon-twitter:before { content: '\f099'; } /* '' */
-.inbrace-icon-facebook:before { content: '\f09a'; } /* '' */
+
+
+.inspiro-icon-phone:before { content: '\e800'; } /* '' */
+.inspiro-icon-mail:before { content: '\e801'; } /* '' */
+.inspiro-icon-linkedin-squared:before { content: '\f30c'; } /* '' */
+
