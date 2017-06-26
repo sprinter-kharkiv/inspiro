@@ -241,6 +241,14 @@ input.join_form-field {
       margin-right: 0;
     }
   }
+  .col-6 .input_group {
+    float: left;
+    width: 16.3%;
+    margin-right: 0.44%;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
   input[type='text'] {
     width: 100%;
     margin-bottom: 0.5%;
